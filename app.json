@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Dsa",
+    "name": "Visualizer",
     "slug": "Dsa",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "icon": "./assets/app_logo.png",
+    "splash":{
+      "image":"./assets/splashScreen.png",
+      "resizeMode":"cover",
+      "backgroundColor":"#0C121F"
     },
+    "userInterfaceStyle": "light",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -18,16 +18,26 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muqtasid.Dsa"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "com.muqtasid.Dsa"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "build": {
+      "babel": {
+        "include": [
+          "galio-framework"
+        ]
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0e4cca48-6649-40f2-b646-fe8ca5d24414"
+      }
     }
   }
 }
